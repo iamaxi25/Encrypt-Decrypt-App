@@ -35,7 +35,7 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   background-color: rgba(17, 17, 17, 0.767);
@@ -52,6 +52,7 @@ video {
 .app-menu {
   display: flex;
   flex-direction: column;
+  margin-bottom: 200px;
   gap: 50px;
 }
 
@@ -77,8 +78,20 @@ button.encrypt {
   transition: filter 0.2s ease-in-out;
 }
 
+button.clear {
+  border-radius: 15px;
+  outline: none;
+  filter: grayscale(100%);
+  border: 5px solid rgb(0, 0, 0);
+  transition: filter 0.2s ease-in-out;
+}
+
 button.decrypt:hover {
   filter: hue-rotate(-50deg);
+}
+
+button.clear:hover {
+  filter: grayscale(0%);
 }
 
 button.encrypt:hover {
@@ -110,4 +123,15 @@ button.encrypt:hover {
   outline: none;
   border-color: rgb(69, 214, 171);
   box-shadow: 0 0 5px rgb(69, 214, 171);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: Alien-Solid;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-shadow: rgb(0, 0, 0) 0px 2px 2px;
+  background-color: rgba(69, 214, 170, 0.425);
 }

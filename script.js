@@ -98,3 +98,8 @@ encryptButton.addEventListener("click", function () {
   }
   document.querySelector("#hashes").value = cipherText;
 });
+
+// Delete Text Function
+function deleteText() {
+  document.getElementById("hashes").value = "";
+}

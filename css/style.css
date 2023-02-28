@@ -90,6 +90,7 @@ button.encrypt:hover {
   justify-content: center;
 }
 
+/* TextArea form */
 #hashes {
   max-width: 600px;
   min-width: 600px;

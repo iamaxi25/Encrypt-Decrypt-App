@@ -64,9 +64,29 @@ function decrypt(cipherText) {
   return plainText;
 }
 
+function encrypt(plainText) {
+  let cipherText = "";
+  for (let i = 0; i < plainText.length; i++) {
+    const index = largeWheel.indexOf(plainText[i].toUpperCase());
+    if (index !== -1) {
+      cipherText += smallWheel[index];
+    } else {
+      cipherText += plainText[i];
+    }
+  }
+  return cipherText;
+}
+
 const decryptButton = document.querySelector(".decrypt");
 decryptButton.addEventListener("click", function () {
   const cipherText = document.querySelector("#hashes").value;
   const plainText = decrypt(cipherText);
   document.querySelector("#hashes").value = plainText;
+});
+
+const encryptButton = document.querySelector(".encrypt");
+encryptButton.addEventListener("click", function () {
+  const plainText = document.querySelector("#hashes").value;
+  const cipherText = encrypt(plainText);
+  document.querySelector("#hashes").value = cipherText;
 });

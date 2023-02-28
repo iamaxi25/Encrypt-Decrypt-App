@@ -14,6 +14,8 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
   font-family: Alien-Solid;
+  display:flex;
+  justify-content: center;
 }
 
 video {                
@@ -27,16 +29,28 @@ video {
 }
 
 #container {
-  position:absolute;
-  display: flex;
-  justify-content: center;
-  width:100%;
+  position: absolute;
+  margin:0 auto;
+  width:800px;
   height:100%;
-  background-color: rgba(10, 10, 10, 0.788);
+  background-color:rgba(17, 17, 17, 0.767);
+  
 }
 
 .main-title{
   font-size: 24px;
-  color:rgb(66, 196, 157);
- 
+  color:rgb(60, 185, 148);
+  display:flex;
+  justify-content: center;
+}
+
+.app-menu{
+  display:flex;
+  justify-content: center;
+}
+
+.app-menu-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }

@@ -1,4 +1,20 @@
 /* Cover the entire page with the background-video */
+@font-face {
+  font-family: Principal;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Principal-Bold;
+  src: url(fonts/Roboto/Roboto-Black.ttf);
+  font-weight: bold;
+}   
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 video {                
   object-fit:cover;
   width:100vw;
@@ -6,5 +22,21 @@ video {
   position:fixed;
   top:0;
   left:0;
-  z-index: -1;
+  filter:blur(1px);
+}
+
+#container {
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  width:40%;
+  height:100%;
+  background-color: rgba(27, 27, 27, 0.788);
+}
+
+.main-title{
+  font-size: 24px;
+  color:white;
+ 
+  
 }

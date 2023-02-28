@@ -1,104 +1,100 @@
 /* Cover the entire page with the background-video */
 @font-face {
   font-family: Alien-Regular;
-  src: url(/fonts/Alien/Alien-Encounters-Regular.ttf)
+  src: url(/fonts/Alien/Alien-Encounters-Regular.ttf);
 }
 
 @font-face {
   font-family: Alien-Solid;
   src: url(/fonts/Alien/Alien-Encounters-Solid-Regular.ttf);
   font-weight: bold;
-}   
+}
 
 body {
   margin: 0 auto;
   overflow-x: hidden;
   font-family: Alien-Solid;
-  display:flex;
+  display: flex;
   justify-content: center;
- 
 }
 
 /* background-video */
-video {                
-  object-fit:cover;
-  width:100vw;
-  height:100vh;
-  position:fixed;
-  top:0;
-  left:0;
-  filter:blur(1px);
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
 }
 
- /* The main Container */
+/* The main Container */
 #container {
   position: absolute;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  margin:0 auto;
-  width:100%;
-  height:100%;
-  background-color:rgba(17, 17, 17, 0.767);
-  
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.767);
 }
 
 /* "Encrypt&Decrypt Title */
-.main-title{
+.main-title {
   text-shadow: rgb(0, 0, 0) 5px 5px 6px;
   font-size: 28px;
-  color:rgb(69, 214, 171);
+  color: rgb(69, 214, 171);
 }
 
 /* The app menu with buttons forms etc */
-.app-menu{
+.app-menu {
   display: flex;
   flex-direction: column;
-  gap:50px;
+  gap: 50px;
 }
 
 .app-menu-buttons {
   display: flex;
   justify-content: space-evenly;
   min-width: 800px;
-  max-width:1000px;
+  max-width: 1000px;
 }
 
 /* The button style/hover */
-button.decrypt{
-  border-radius:15px;
+button.decrypt {
+  border-radius: 15px;
   outline: none;
-  border:5px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
   transition: filter 0.2s ease-in-out;
 }
 
-button.encrypt{
-  border-radius:15px;
+button.encrypt {
+  border-radius: 15px;
   outline: none;
-  border:5px solid rgb(0, 0, 0);
+  border: 5px solid rgb(0, 0, 0);
   transition: filter 0.2s ease-in-out;
 }
 
-button.decrypt:hover{
-  filter:hue-rotate(-50deg);
+button.decrypt:hover {
+  filter: hue-rotate(-50deg);
 }
 
-button.encrypt:hover{
-  
-  filter:hue-rotate(50deg);
-  
+button.encrypt:hover {
+  filter: hue-rotate(50deg);
 }
 
-.form{
-  display:flex;
+.form {
+  display: flex;
   justify-content: center;
 }
 
-#hashes{
-  max-width:600px;
-  min-width:600px;
-  max-height:100px;
-  min-height:100px;
+#hashes {
+  max-width: 600px;
+  min-width: 600px;
+  max-height: 100px;
+  min-height: 100px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -114,4 +110,3 @@ button.encrypt:hover{
   border-color: rgb(69, 214, 171);
   box-shadow: 0 0 5px rgb(69, 214, 171);
 }
-

@@ -80,6 +80,10 @@ function encrypt(plainText) {
 const decryptButton = document.querySelector(".decrypt");
 decryptButton.addEventListener("click", function () {
   const cipherText = document.querySelector("#hashes").value;
+  if (cipherText === "") {
+    alert("Please enter a cipher text to decrypt.");
+    return;
+  }
   const plainText = decrypt(cipherText);
   document.querySelector("#hashes").value = plainText;
 });
@@ -88,5 +92,9 @@ const encryptButton = document.querySelector(".encrypt");
 encryptButton.addEventListener("click", function () {
   const plainText = document.querySelector("#hashes").value;
   const cipherText = encrypt(plainText);
+  if (cipherText === "") {
+    alert("Please enter a text to encrypt.");
+    return;
+  }
   document.querySelector("#hashes").value = cipherText;
 });

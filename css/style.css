@@ -16,7 +16,9 @@ body {
   font-family: Alien-Solid;
   display:flex;
   justify-content: center;
+ 
 }
+
 
 video {                
   object-fit:cover;
@@ -41,8 +43,8 @@ video {
 }
 
 .main-title{
-  font-size: 24px;
-  color:rgb(60, 185, 148);
+  font-size: 28px;
+  color:rgb(69, 214, 171);
 }
 
 .app-menu{
@@ -58,6 +60,31 @@ video {
   max-width:1000px;
 }
 
+button.decrypt{
+  border-radius:15px;
+  outline: none;
+  border:5px solid rgb(0, 0, 0);
+  transition: border-color 0.2s ease-in-out;
+}
+
+button.encrypt{
+  border-radius:15px;
+  outline: none;
+  border:5px solid rgb(0, 0, 0);
+  transition: border-color 0.2s ease-in-out;
+}
+
+button.decrypt:hover{
+  filter:hue-rotate(-50deg);
+}
+
+button.encrypt:hover{
+  
+  filter:hue-rotate(50deg);
+  
+}
+
+
 .form{
   display:flex;
   justify-content: center;
@@ -66,12 +93,7 @@ video {
 #decrypt-form
 #encrypt-form {
   display: none;
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 300px;
-  padding: 20px;
   background-color: #fff;
   border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);

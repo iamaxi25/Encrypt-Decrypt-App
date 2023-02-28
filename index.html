@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>My Encrypt/Decrypt App</title>
   </head>
@@ -23,41 +23,22 @@
       <div class="app-menu">
         <!-- ENCRYPT/DECRYPT BUTTONS -->
         <div class="app-menu-buttons">
-          <button
-            class="decrypt"
-            type="button"
-            onclick="showForm('decrypt-form')"
-          >
+          <button class="encrypt" type="button">
             <img
-              src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/32/Lock-Lock-icon.png"
-              width="32"
-              height="32"
+              src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/64/Lock-Lock-icon.png"
+              width="64"
+              height="64"
             />
           </button>
-          <button
-            class="encrypt"
-            type="button"
-            onclick="showForm('encrypt-form')"
-          >
-            <img
-              src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/32/Lock-Unlock-icon.png"
-              width="32"
-              height="32"
-            />
+          <button class="decrypt" type="button">
+            <img src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/64/Lock-Unlock-icon.png" width="64" height="64">
+
           </button>
+         
         </div>
         <!-- DECRYPT-ENCRYPT-FORM -->
         <div class="form">
-          <!-- TEXT-INPUT -->
-          <div id="decrypt-form" class="form-container">
-            <form>
-              <input type="text" />
-            </form>
-          </div>
-          <div id="encrypt-form" class="form-container">
-            <form>
-              <input type="text" />
-            </form>
+          
           </div>
         </div>
       </div>

@@ -1,12 +1,12 @@
 /* Cover the entire page with the background-video */
 @font-face {
   font-family: Alien-Regular;
-  src: url(/fonts/Alien/Alien-Encounters-Regular.ttf);
+  src: url(../fonts/Alien/Alien-Encounters-Regular.ttf);
 }
 
 @font-face {
   font-family: Alien-Solid;
-  src: url(/fonts/Alien/Alien-Encounters-Solid-Regular.ttf);
+  src: url(../fonts/Alien/Alien-Encounters-Solid-Regular.ttf);
   font-weight: bold;
 }
 
@@ -128,8 +128,9 @@ button.encrypt:hover {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: Alien-Solid;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(255, 255, 255);
   width: 100%;
   text-shadow: rgb(0, 0, 0) 0px 2px 2px;

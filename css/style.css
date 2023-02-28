@@ -19,7 +19,7 @@ body {
  
 }
 
-
+/* background-video */
 video {                
   object-fit:cover;
   width:100vw;
@@ -30,6 +30,7 @@ video {
   filter:blur(1px);
 }
 
+ /* The main Container */
 #container {
   position: absolute;
   display:flex;
@@ -42,15 +43,18 @@ video {
   
 }
 
+/* "Encrypt&Decrypt Title */
 .main-title{
+  text-shadow: rgb(0, 0, 0) 5px 5px 6px;
   font-size: 28px;
   color:rgb(69, 214, 171);
 }
 
+/* The app menu with buttons forms etc */
 .app-menu{
   display: flex;
   flex-direction: column;
-  gap:150px;
+  gap:50px;
 }
 
 .app-menu-buttons {
@@ -60,18 +64,19 @@ video {
   max-width:1000px;
 }
 
+/* The button style/hover */
 button.decrypt{
   border-radius:15px;
   outline: none;
   border:5px solid rgb(0, 0, 0);
-  transition: border-color 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 button.encrypt{
   border-radius:15px;
   outline: none;
   border:5px solid rgb(0, 0, 0);
-  transition: border-color 0.2s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 button.decrypt:hover{
@@ -84,22 +89,29 @@ button.encrypt:hover{
   
 }
 
-
 .form{
   display:flex;
   justify-content: center;
 }
 
-#decrypt-form
-#encrypt-form {
-  display: none;
-  width: 300px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+#hashes{
+  max-width:600px;
+  min-width:600px;
+  max-height:100px;
+  min-height:100px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
-.form-container{
-  display: none;
+#hashes:focus {
+  outline: none;
+  border-color: rgb(69, 214, 171);
+  box-shadow: 0 0 5px rgb(69, 214, 171);
 }
 

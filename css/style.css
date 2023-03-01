@@ -65,7 +65,7 @@ video {
 
 /* The button style/hover */
 button.decrypt {
-  border-radius: 5px;
+  border-radius: 15px;
   outline: none;
   border: 5px solid rgb(0, 0, 0);
 

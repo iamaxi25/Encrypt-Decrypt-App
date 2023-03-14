@@ -51,6 +51,7 @@ const smallWheel = [
   "c",
   "e",
 ];
+
 // Define a function that takes a cipher text and returns the plain text by looking up each character in the small wheel and finding its corresponding character in the large wheel
 function decrypt(cipherText) {
   let plainText = "";
@@ -64,6 +65,7 @@ function decrypt(cipherText) {
   }
   return plainText;
 }
+
 // Define a function that takes a plain text and returns the cipher text by looking up each character in the large wheel and finding its corresponding character in the small wheel
 function encrypt(plainText) {
   let cipherText = "";
@@ -77,6 +79,7 @@ function encrypt(plainText) {
   }
   return cipherText;
 }
+
 // Define a click event listener for the "Decrypt" button that takes the value of the input field, decrypts it, and sets the input field value to the decrypted text
 const decryptButton = document.querySelector(".decrypt");
 decryptButton.addEventListener("click", function () {
@@ -88,6 +91,7 @@ decryptButton.addEventListener("click", function () {
   const plainText = decrypt(cipherText);
   document.querySelector("#hashes").value = plainText;
 });
+
 // Define a click event listener for the "Encrypt" button that takes the value of the input field, encrypts it, and sets the input field value to the encrypted text
 const encryptButton = document.querySelector(".encrypt");
 encryptButton.addEventListener("click", function () {
